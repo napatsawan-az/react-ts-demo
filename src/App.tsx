@@ -1,9 +1,7 @@
-import Container from "./components/Container";
-
 function App() {
   return (
     <>
-      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <h2>Prop Types and Tips</h2>
     </>
   );
 }
