@@ -1,9 +1,9 @@
-import LoggedIn from "./components/state/LoggedIn";
+import Counter from "./components/state/Counter";
 
 function App() {
   return (
     <>
-      <LoggedIn />
+      <Counter />
     </>
   );
 }
