@@ -1,7 +1,9 @@
+import LoggedIn from "./components/state/LoggedIn";
+
 function App() {
   return (
     <>
-      <h2>Prop Types and Tips</h2>
+      <LoggedIn />
     </>
   );
 }
