@@ -6,7 +6,8 @@ type AuthUser = {
 };
 
 const User = () => {
-  const [user, setUser] = useState<AuthUser | null>(null);
+  // type assertion
+  const [user, setUser] = useState<AuthUser>({} as AuthUser);
 
   const handleLogin = () => {
     setUser({
@@ -15,16 +16,16 @@ const User = () => {
     });
   };
 
-  const hangdleLogout = () => {
-    setUser(null);
-  };
+  //   const hangdleLogout = () => {
+  //     setUser(null);
+  //   };
 
   return (
     <>
       <button onClick={handleLogin}>Login</button>
-      <button onClick={hangdleLogout}>Logout</button>
-      <div>User name is {user?.name}</div>
-      <div>User email is {user?.email}</div>
+      {/* <button onClick={hangdleLogout}>Logout</button> */}
+      <div>User name is {user.name}</div>
+      <div>User email is {user.email}</div>
     </>
   );
 };
