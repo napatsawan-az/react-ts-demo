@@ -1,10 +1,10 @@
-import { Counter } from "./components/class/Counter";
-
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 function App() {
   return (
     <div>
-      <Counter message="The count value is "/>
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
