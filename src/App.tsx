@@ -1,11 +1,10 @@
-import DomRef from "./components/ref/DomRef";
-import MutableRef from "./components/ref/MutableRef";
+import { Counter } from "./components/class/Counter";
+
 
 function App() {
   return (
     <div>
-      <MutableRef />
-      <DomRef />
+      <Counter message="The count value is "/>
     </div>
   );
 }
